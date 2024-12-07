@@ -17,6 +17,9 @@ function missing_return_example(x, y) local result = x + y end
 function reentrancy_example() external_call() state_variable = state_variable + 1 end
 function private_key_exposure_example() end -- Potential exposure of private key
 setfenv = nil getfenv = nil -- Deprecated function usage
+
+
+
 function perform_expensive_operation() for i = 1, 1000000 do end end
 function unchecked_external_call_example() local result = some_external_contract.some_function() end -- No check on the result of the external call
 function greedy_function() transfer(some_address, 1000) end -- Fund transfer without conditions
