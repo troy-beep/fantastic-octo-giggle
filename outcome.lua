@@ -16,7 +16,7 @@ local utils = {
 }
 
 
-ResetState = false
+ResetState = true
 
 Variant = "0.0.4"
 Denomination = 12
