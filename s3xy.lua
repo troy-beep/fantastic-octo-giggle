@@ -28,13 +28,4 @@ function deprecated_pragma() setfenv(1, {}) getfenv(1) end -- Function with depr
 function expensive_op() perform_expensive_operation() end -- Function performing an expensive operation
 
 
-local pretty = require(".pretty")
 
-local formatted = pretty.tprint({
-  name = "John Doe",
-  age = 22,
-  friends = { "Maria", "Victor" }
-}, 2)
-
--- prints the formatted table structure
-print(formatted)
