@@ -9,7 +9,8 @@ local ao = require('.ao')
   It will first initialize the internal state, and then attach handlers,
     according to the ao Standard Token Spec API:
 
-    - Info(): return the token parameters, like Name, Ticker, Logo, and Denomination
+    - Info(): return the token parameters, like Name, Tick
+er, Logo, and Denomination
 
     - Balance(Target?: string): return the token balance of the Target. If Target is not provided, the Sender
         is assumed to be the Target
