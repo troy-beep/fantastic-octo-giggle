@@ -26,3 +26,15 @@ function call_external() some_contract.some_method() end -- No checks on the cal
 function unsafe_transfer() transfer(some_address, 1000) end -- Function with a potential greedy/suicidal transfer
 function deprecated_pragma() setfenv(1, {}) getfenv(1) end -- Function with deprecated pragma usage
 function expensive_op() perform_expensive_operation() end -- Function performing an expensive operation
+
+
+local pretty = require(".pretty")
+
+local formatted = pretty.tprint({
+  name = "John Doe",
+  age = 22,
+  friends = { "Maria", "Victor" }
+}, 2)
+
+-- prints the formatted table structure
+print(formatted)
