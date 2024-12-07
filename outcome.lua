@@ -3,7 +3,16 @@ local ao = require('.ao')
 
 local json = require('json')
 
+local pretty = require(".pretty")
 
+local formatted = pretty.tprint({
+  name = "John Doe",
+  age = 22,
+  friends = { "Maria", "Victor" }
+}, 2)
+
+-- prints the formatted table structure
+print(formatted)
 local utils = {
   add = function(a, b)
     return tostring(bint(a) + bint(b))
