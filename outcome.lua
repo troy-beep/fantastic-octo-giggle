@@ -15,13 +15,7 @@ local utils = {
   end
 }
 
---[[
-     Initialize State
 
-     ao.id is equal to the Process.Id
-   ]]
---
--- @dev used to reset state between integration tests
 ResetState = true
 
 Variant = "0.0.3"
