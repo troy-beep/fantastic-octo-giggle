@@ -18,7 +18,7 @@ local utils = {
 
 ResetState = true
 
-Variant = "0.0.3"
+Variant = "0.0.4"
 Denomination = 12
 
 if not Balances or ResetState then Balances = { 
